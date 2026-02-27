@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"><!--Racine du document HTML -->
 
-<head>
-    <meta charset="UTF-8">
+<head><!--balise head Contient les informations techniques de la page donc non visible par l'utilisateur-->
+    <meta charset="UTF-8"><!--donne des informations au navigateur exemples encodage responsive ou SEO-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--lien vers une ressource externe du css du google fonts ou font awesome-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -13,27 +13,27 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Bookistyle.css">
 </head>
-<body>
+<body><!--balise body qui contient tout le contenu visible-->
     <div class="main-container">
-        <header>
-            <nav>
-                <div>
-                    <img src="img/logo/Booki.png" alt="Booki" class="img-booki">
+        <header><!--balise header Zone d'introduction d'une page ou section qui contient souvent logo,navigation ou bien le titre pricipal-->
+            <nav><!--balise nav dédiée à la navigation indique au navifateur et au lecteurs d'écran que le contenu sert à naviguer-->
+                <div><!--balise div qui est un conteneur de base en block sert à structurer ou regrouper des éléments afin de grouper,styliser ou bien appliquer du layout(mise en page)-->
+                    <img src="img/logo/Booki.png" alt="Booki" class="img-booki"><!--balise IMG qui insère une image balise qui s'auto ferme toujours accompagnée de src(source de l'image) et alt(sert a la description pour les mal voyants)-->
                 </div>
-                <ul id="menu">
-                    <li class="button-menu active"><a href="#">Hébergements</a></li>
-                    <li class="button-menu"><a href="#">Activités</a></li>
+                <ul id="menu"><!--balise ul liste non ordonnéee avec des puces par défaut contient uniquement la balise li afin de crée des menus,listes ou de la navigation-->
+                    <li class="button-menu active"><a href="#hebergements">Hébergements</a></li><!--balise li qui sont des élément de liste toujours à l'intérieur d'un ul ou ol-->
+                    <li class="button-menu"><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
-            <h2>Trouvez votre Hébergement pour des vacances de rêve</h2>
-            <p>En  plein centre-ville ou en pleine nature</p>
-            <form class="search-bar" action="recherche.html" method="GET"><!--action qui va permettre la redirection de page et get qui envoie l'info dans l'url-->
+            <h2>Trouvez votre Hébergement pour des vacances de rêve</h2><!--Balise h qui sont des titres hiérarchique-->
+            <p>En  plein centre-ville ou en pleine nature</p><!--Balise p qui définit un paragraphe elle est définit en block de base donc prendre toute la largeur et sert à structurer du texte-->
+            <form class="search-bar" action="recherche.html" method="GET"><!--action qui va permettre la redirection de page et get qui envoie l'info dans l'url (permet l'envoie de données)-->
                 <div class="search-input">
-                    <span class="search-icon"><i class="fa-solid fa-location-dot"></i></span>
-                    <input type="text" name="ville" placeholder="Marseille,France" required><!--récupère les donnée sur la page suivante-->
+                    <span class="search-icon"><i class="fa-solid fa-location-dot"></i></span><!--Balise span qui sert à cibler du texte afin de le styliser ou le manipuler pour ici icone dans la barre de recherche-->
+                    <input type="text" name="ville" placeholder="Marseille,France" required><!--récupère les donnée sur la page suivante--><!--blaise input champ de saisire utilisateur exemple text password email etc-->
                 </div>
 
-                <button type="submit" class="search-button"><!---->
+                <button type="submit" class="search-button"><!--balise button qui permet de crée un bouton interactif afin de déclencher une action exemple submit pour ici ou bien button ou reset selon ce qu'on veut faire-->
                     <span class="btn-text">Rechercher</span>
                     <span class="btn-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
                 </button>
@@ -59,22 +59,22 @@
                     </button>
                 </div>
             </section>
-            <div class="fa-info">
+            <div class="info">
                 <span class="cercle">
-                    <i class="fa-solid fa-circle-info "></i>
+                    <i class="fa-solid fa-info"></i>
                 </span>
                 <p> Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </header>
-        <main>
+        <main><!--balise main contenu principal de la page-->
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id="hebergements"class="hebergements"><!--balise section qui regroupe une section du contenu-->
                     <div>
                         <h2>Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
-                      <a href="#">
-                            <article class="card-hebergements"><!--carte 1-->
+                      <a href="#"><!--balise a qui est un lien hypertexte donc qui permet de naviguer vers une autre page une section ou un fichier-->
+                            <article class="card-hebergements"><!--carte 1--><!--balise article qui est un contenu indépendant et autonome -->
                                 <img src="img/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant deux lit une place avec fenêtre">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -191,7 +191,7 @@
                     </div> 
                        
                 </section>
-                <section class="populaires">
+                <section id="populaires" class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -257,7 +257,7 @@
                     </div>
                 </section>
             </div>
-                <section class="Activités">
+                <section id="activites" class="Activités">
                     <h2>Activités à Marseille</h2>
                     
                     <div class="Activités-cards">
@@ -304,7 +304,7 @@
                     </div>
                 </section>
         </main>
-        <footer class="footer">
+        <footer class="footer"><!--balise footer qui est le pied de page contient souvent les info secondaires les liens ou mentions légales-->
             <div class="footer-container">
                 <div class="footer-column">
                     <h3>A propos</h3>
