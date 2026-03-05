@@ -14,14 +14,14 @@
 }
 
 .fa-solid {
-    color: var(--main-color);/*Définit la couleur du texte exemple la couleur principal définit dans root */
+    color: var(--main-color);
 }
 
 .div-booki {
-    display: flex;/*utilisation de la flex afin de disposer nos élément de façon flexible*/
-    width: 161px;/*longeur de notre contenu*//*définit la largeur*/
-    height: 79px;/*hauteur de l'élément*//*définit la hauteur d'un élément*/
-    padding: 30px 50px 0px 0px;/*espacement des bordure de chaque coté*//*espace intérieur entre le contenu et la bordure*/
+    display: flex;
+    width: 161px;
+    height: 79px;
+    padding: 30px 50px 0px 0px;
 }
 
 img.img-booki {/*icone du site*/
@@ -31,34 +31,34 @@ img.img-booki {/*icone du site*/
 
 nav {/*barre de navigation qui contient hébergement etc*/
     display: flex;
-    justify-content: space-between;/*répartition de l'espace entre les éléments*//*Aligne les éléments sur l'axe principal*/
-    align-items: center;/*alignement des éléments sur l'axe*//*Aligne les éléments sur l’axe secondaire*/
+    justify-content: space-between;
+    align-items: center;
 }
 
 #menu{/*style de la liste contenu dans la nav*/
     display: flex;
-    gap: 68px;/*définis l'espacement*//*définit l'espace entre les éléments flex ou grid*/
-    list-style: none;/*définition de l'apparence de notre liste(aucune car pas de puces voulu)*/
+    gap: 68px;
+    list-style: none;
 }
 
 .button-menu a {/*bouton du menu*/
-    text-decoration: none;/*sert à styliser le text (aucun actuellement)*//*Ajoute ou retire un soulignement,barré etc*/
-    color: black;/*donne la coloration du text*/
-    padding: 20px 0; /* espace vertical */
-    position: relative;/*donne la position de l'élément dans la page*/
+    text-decoration: none;
+    color: black;
+    padding: 20px 0; 
+    position: relative;
 }
-/**/
-.button-menu a:hover { /*changement de couleurs uniquement du texte au passage de la souris*//*pseudo classe activé au survol*/
+
+.button-menu a:hover { /*change couleurs menu passage souris*/
     color: #0065FC;
 }
 
 .button-menu a:hover::before { /*création de la petite barre bleu au dessus au passage de la souris*/
-    content: "";/*crée une barre*/
-    position: absolute;/*positionnement de la barre*//*définit comment un élément est positionné*/
-    top: 0;/*la positionne en haut comme voulu*/
+    content: "";
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 2px;
-    background-color: #0065FC;/*Définit la couleur d’arrière-plan d’un élément exemple ici définition de la couleurs de la barre*/
+    background-color: #0065FC;
 }
 
 .header{
@@ -67,25 +67,25 @@ nav {/*barre de navigation qui contient hébergement etc*/
 
 .search-bar{/*barre de recherche*/
     display: flex;
-    align-items: center;/*alignement*/
-    width: 100%;/*taille de l'objet*/
-    max-width: 420px;/*taille max*/
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
     height: 50px;
-    border-radius: 15px;/*coin arrondi*/
-    overflow: hidden;/*cacher le dépassement*/
-    background-color: #F2F2F2;/*fond grid*/
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #F2F2F2;
 }
 
 .search-icon{/*icon  de la barre de recherche*/
     display: flex;
-    align-items: center;/*alignement*/
-    justify-content: center;/*alignement par rapport a l'axe principal*/
+    align-items: center;
+    justify-content: center;
     width: 50px;
     height: 100%;
     background-color: #F2F2F2;
 }
 
-.search-input{/*barre de recherche*/
+.search-input{/*barre de recherche entrer texte*/
     flex: 1;
     background-color: white;
     height: 100%;
@@ -120,7 +120,7 @@ nav {/*barre de navigation qui contient hébergement etc*/
 }
 
 .btn-icon {/*loupe de la barre de recherche*/
-    display: none;/*cache la loupe sur PC*/
+    display: none;
 }
 
 .search-button .fa-solid {/*couleur de la loupe*/
@@ -178,11 +178,10 @@ button.button-filtres {/*bouton filtres*/
 
 .main-container {/*page entière*/
     width: 100%;
-    max-width: 1440px;/*définit la largeur maximale autorisée*/
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 50px;
-    box-sizing: border-box;/*définit comment width et height sont calculées content-box par défaut border-box inculut padding et border*/
-}
+    box-sizing: border-box;
 
 a {
     color: inherit;
@@ -209,16 +208,15 @@ a {
 }
 
 .card-hebergements img {/*image carte hébergements*/
-    object-fit: cover;/*définit comment une image s'adapte dans son conteneur*/
-    width: 100%;
+    object-fit: cover;
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .hebergements-cards {/*zone des cartes hébergement*/
-    display: grid;/*dispose les élément en lignes et en colonnes*/
-    grid-template-columns: repeat(3,1fr);/*définit le nombre et la taille des colonnes*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 15px;
 }
 
@@ -243,9 +241,9 @@ a {
 }
 
 .afficher-plus {/*afficher plus dans la zone hébergements*/
-    font-weight: 700;/*définit l'épaisseur du texte normal*/
+    font-weight: 700;
     font-size: 18px;
-    cursor: pointer;/*change le curseur exemple ici en pointer*/
+    cursor: pointer;
 }
 
 
@@ -262,7 +260,7 @@ a {
     box-sizing: border-box;
 }
 
-.hebergements {
+.hebergements {/*div hebergements*/
     width: 65%;
 }
 
@@ -292,9 +290,9 @@ a {
     width: 67%;
     padding-left: 15px;
     display: flex;
-    flex-direction: column;/*définit l'axe principal ici en colonne*/
+    flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;/*change le modèle de calcul des dimensions*/
+    box-sizing: border-box;
 }
 
 .populaires-cards .card-title {/*titre de la carte*/
@@ -323,7 +321,7 @@ a {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));/*applique des effets graphiques par exemple ici une ombre*/
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card-Activités img{/*image activité*/
@@ -360,7 +358,7 @@ a {
 }
 
 .footer-column ul{/*liste du footer*/
-    list-style: none;/*féfinit l'apparence des puces d'une liste exemple ici elles sont retiré*/
+    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -386,10 +384,10 @@ a {
     margin-top: 15px;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+
+/* Media queries*/
+/*format tablette*/
 @media (max-width: 1024px) {
 
 .hebergements-and-populaires {
@@ -446,7 +444,7 @@ section.Filtres{
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {/*permet d'appliquer du css selon la taille d'écran*/
+@media (max-width: 767.98px) {
 
 .main-container{
     padding: 0 20px;
@@ -454,25 +452,25 @@ section.Filtres{
 
     
 nav{/*barre nav qui change*/
-    flex-direction: column;/*se met en colonne*/
+    flex-direction: column;
     align-items: center;   
     gap: 15px;
     padding-bottom: 10px;
 }
 
-#menu{
+#menu{/*style de la liste contenu dans la nav*/
     display: flex;
     width: 100%;
     padding: 0;
 }
 
-#menu li{
+#menu li{/*bouton dans le menu */
     flex: 1;
     text-align: center;
     position: relative;
 }
 
-#menu li a{
+#menu li a{/*texte dans le bouton*/
     display: block;
     padding: 15px 0;
 }
@@ -480,35 +478,31 @@ nav{/*barre nav qui change*/
 .button-menu a::before {/*permet d'ahouter du contenu généré via css*/
     display: none;
 }
-/*activée quand un élément reçoit le focus*/
-.button-menu a:active{
+
+.button-menu a:active{/*bouton du menu quand actif*/
     border-bottom: 3px solid var(--main-color);
 }
 
-.btn-text {
-    display: none;   /* cache le texte */
+.btn-text {/*texte bouton rechercher*/
+    display: none;
 }
 
-.btn-icon {
-    display: block;  /* affiche la loupe */
-    font-size: 30px;
+.btn-icon {/*bouton loupe*/
+    display: block; 
+    font-size: 15px;
 }
 
-.search-button {
-    padding: 0 15px; /* bouton plus compact */
-}
-
-.search-bar{
+.search-bar{/*barre de recherche entière*/
     width: 100%;
     display: flex;
 }
 
-.search-input{
+.search-input{/*zone input*/
     flex: 1;
     min-width: 0;
 }
 
-.search-button{
+.search-button{/*bouton de la recherche*/
     flex: 0 0 auto;
     border-radius: 15px;
     padding: 0 15px;
@@ -517,7 +511,7 @@ nav{/*barre nav qui change*/
     justify-content: center;
 }
 
-section.Filtres{
+section.Filtres{/**/
    display: block;
 }
 
@@ -533,27 +527,27 @@ section.Filtres{
     padding: 8px 10px;
 }
 
-.populaires{
+.populaires{/*section populaires*/
     width: 100vw;
     margin-left:calc(50% - 50vw);
     border-radius: 0;
     background-color: var(--main-bg-color);
 }
 
-.populaires-cards{
+.populaires-cards{/*cartes*/
     display: flex;
     flex-direction: column;
     gap: 0;
 }
 
-.hebergements{
+.hebergements{/*section hebergements*/
     width: 100vw;
     margin-left: calc(50% - 50vw);
     border-radius: 0;
     background-color: white;
 }
 
-.hebergements-cards{
+.hebergements-cards{/*cartes*/
     grid-template-columns: 1fr;
 }
 
@@ -574,34 +568,34 @@ section.Filtres{
     background-color: var(--main-bg-color);
 }
 
-.Activités-cards{
+.Activités-cards{/*conteneur de carte activité*/
     grid-template-columns: 1fr;
 }
 
-.card-Activités img{
+.card-Activités img{/*image de carte activité*/
     height: 141px;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;      
 }
 
-.card-Activités{
+.card-Activités{/*carte activités*/
     width: 100%;
 }
 
-.footer{
+.footer{/*pied de page du site*/
     width: 100vw;
     margin-left: calc(50% - 50vw);
 }
 
-.footer-container{
+.footer-container{/*conteneur des colonnes du footer*/
     flex-direction: column;
     gap: 30px;
     padding: 0 20px;
     align-items: flex-start;
 }
 
-.footer-column{
+.footer-column{/*colonne du footer*/
     width: 100%;
     text-align: left;
 }
@@ -611,4 +605,5 @@ section.Filtres{
 
 html{
     scroll-behavior: smooth;
+}
 }
