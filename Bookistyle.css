@@ -209,6 +209,7 @@ a {
 
 .card-hebergements img {/*image carte hébergements*/
     object-fit: cover;
+    width: 100%;
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
